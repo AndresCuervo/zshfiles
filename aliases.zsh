@@ -14,5 +14,5 @@ alias dtruss='sudo dtruss'
 alias dtrace='sudo dtrace'
 alias cdvg='cd ~/Documents/webProjects/p5/videoGame && cl'
 
-alias vim-none='vim -u NONE "+set nocompatible" "+set hls" "+filetype plugin on"'
+alias vim-none='vim -u NONE "+set nocompatible" "+set hls" "+filetype plugin on" "+inoremap jk <Esc>" "+set number" "+set syntax" "+nnoremap fef mx=ggG=\`x" "+set cf"'
 alias gitrmignored='git ls-files --ignored --exclude-standard | xargs git rm --cached'
