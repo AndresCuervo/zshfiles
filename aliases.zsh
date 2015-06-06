@@ -9,6 +9,9 @@ alias cdmamp='cd /Applications/MAMP'
 alias cdvg='cd ~/Documents/webProjects/p5/videoGame && cl'
 alias colorsinfo='sed -n "23,36p" ~/.zsh/lscolors'
 
+# Ruby alias(es)
+alias ri='ri -Tf ansi'
+
 alias vim-none='vim -u NONE "+set nocompatible" "+set hls" "+filetype plugin on" "+inoremap jk <Esc>" "+set number" "+set syntax" "+nnoremap fef mx=ggG=\`x" "+set cf"'
 alias gitrmignored='git ls-files --ignored --exclude-standard | xargs git rm --cached'
 
