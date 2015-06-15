@@ -5,7 +5,9 @@ alias shme='ssh acuervo@cs.oberlin.edu'
 alias rbenv="nocorrect rbenv"
 alias dtruss='sudo dtruss'
 alias dtrace='sudo dtrace'
-alias cdmamp='cd /Applications/MAMP'
+alias cdcn='cd ~/Documents/webProjects/codeNow/'
+alias js='cd ~/Documents/webProjects/andrescuervo.github.io/ && jekyll serve'
+alias cdmamp='cd /Applications/MAMP/htdocs/'
 alias cdvg='cd ~/Documents/webProjects/p5/videoGame && cl'
 alias colorsinfo='sed -n "23,36p" ~/.zsh/lscolors'
 
