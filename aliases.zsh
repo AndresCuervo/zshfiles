@@ -5,12 +5,14 @@ alias shme='ssh acuervo@cs.oberlin.edu'
 alias rbenv="nocorrect rbenv"
 alias dtruss='sudo dtruss'
 alias dtrace='sudo dtrace'
-alias cdcn='cd ~/Documents/webProjects/codeNow/'
-alias js='cd ~/Documents/webProjects/andrescuervo.github.io/ && bin/jekyll serve'
+alias cdcn='cd ~/webProjects/codeNow/'
+alias js='cd ~/webProjects/andrescuervo.github.io/ && bin/jekyll serve'
 alias octo='nocorrect bin/octopress'
 alias cdmamp='cd /Applications/MAMP/htdocs/'
-alias cdvg='cd ~/Documents/webProjects/p5/videoGame && cl'
+alias cdvg='cd ~/webProjects/p5/videoGame && cl'
 alias colorsinfo='sed -n "23,36p" ~/.zsh/lscolors'
+alias battery='pmset -g ps'
+alias batt='battery'
 
 # Ruby alias(es)
 alias ri='ri -Tf ansi'
