@@ -1,4 +1,3 @@
-alias rm='rm -i'
 alias trash='rmtrash'
 alias ls='ls -AG'
 alias cl='clear && ls'
