@@ -54,7 +54,6 @@ zstyle :omz:plugins:ssh-agent identities id_rsa id_rsa2 id_github
 
 # User configuration
 
-export PATH="/Users/tiny/.rvm/gems/ruby-2.1.2/bin:/Users/tiny/.rvm/gems/ruby-2.1.2@global/bin:/Users/tiny/.rvm/rubies/ruby-2.1.2/bin:/Users/tiny/.rvm/bin:/Library/Frameworks/Python.framework/Versions/3.4/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -78,6 +77,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 source ~/.zsh/aliases.zsh
+setopt interactivecomments
 
 function start_agent {
 echo "Initialising new SSH agent..."
@@ -89,5 +89,5 @@ chmod 600 "${SSH_ENV}"
 
 }
 
-export PATH="$PATH:/.rvm/bin" # Add RVM to PATH for scripting
+export PATH=$PATH:/.rvm/bin # Add RVM to PATH for scripting
 export EDITOR='vim'
