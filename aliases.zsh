@@ -5,6 +5,7 @@ alias cl='clear && ls'
 alias rbenv="nocorrect rbenv"
 alias dtruss='sudo dtruss'
 alias dtrace='sudo dtrace'
+alias mcd='__mcd() {mkdir $1 && cd $1};__mcd '
 alias cdcn='cd ~/webProjects/codeNow/'
 alias js='cd ~/webProjects/andrescuervo.github.io/ && bin/jekyll serve'
 alias octo='nocorrect bin/octopress'
