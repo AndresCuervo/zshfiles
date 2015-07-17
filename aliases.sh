@@ -38,6 +38,7 @@ alias gem\?='gem list | ack '
 # Git alias(es)
 # -------------
 alias gitrmignored='git ls-files --ignored --exclude-standard | xargs git rm --cached'
+alias gstd='__gstd() {git --git-dir=$HOME/"$1"/.git --work-tree=$HOME/"$1" status};__gstd '
 alias gshow='git remote show'
 alias gshowo='gshow origin'
 

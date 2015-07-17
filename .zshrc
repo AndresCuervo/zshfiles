@@ -76,7 +76,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-source ~/.zsh/aliases.zsh
+source ~/.zsh/aliases.sh
+source ~/.zsh/npm-completion.sh
+
 setopt interactivecomments
 
 function start_agent {
