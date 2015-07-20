@@ -1,4 +1,5 @@
 alias rm='rm -i'
+alias alias\?='alias | ack '
 alias trash='rmtrash'
 alias ls='ls -AG'
 alias cl='clear && ls'
@@ -15,6 +16,15 @@ alias colorsinfo='sed -n "23,36p" ~/.zsh/lscolors'
 alias battery='pmset -g ps'
 alias batt='battery'
 alias vim-none='vim -u NONE "+set nocompatible" "+set hls" "+filetype plugin on" "+inoremap jk <Esc>" "+set number" "+set syntax" "+nnoremap fef mx=ggG=\`x" "+set cf"'
+
+# -----------------
+# Middleman Aliases
+# -----------------
+alias midb='middleman build'
+alias midd='middleman deploy'
+alias midbd='midb && midd'
+alias midserve='middleman serve'
+alias mids='mideserve'
 
 # ------------
 # Tmux Aliases
