@@ -1,4 +1,3 @@
-alias rm='rm -i'
 alias alias\?='alias | ack '
 alias trash='rmtrash'
 alias ls='ls -AG'
@@ -23,8 +22,8 @@ alias vim-none='vim -u NONE "+set nocompatible" "+set hls" "+filetype plugin on"
 alias midb='middleman build'
 alias midd='middleman deploy'
 alias midbd='midb && midd'
-alias midserve='middleman serve'
-alias mids='mideserve'
+alias midserve='middleman server'
+alias mids='midserve'
 
 # ------------
 # Tmux Aliases
