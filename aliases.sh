@@ -1,4 +1,5 @@
-alias alias\?='alias | ack '
+alias alias\?='alias | grep '
+alias ps\?='ps | ack'
 alias trash='rmtrash'
 alias ls='ls -AG'
 alias cl='clear && ls'
@@ -14,6 +15,7 @@ alias cdvg='cd ~/webProjects/p5/videoGame && cl'
 alias colorsinfo='sed -n "23,36p" ~/.zsh/lscolors'
 alias battery='pmset -g ps'
 alias batt='battery'
+alias v='vim'
 alias vim-none='vim -u NONE "+set nocompatible" "+set hls" "+filetype plugin on" "+inoremap jk <Esc>" "+set number" "+set syntax" "+nnoremap fef mx=ggG=\`x" "+set cf"'
 
 # -----------------
@@ -24,6 +26,9 @@ alias midd='middleman deploy'
 alias midbd='midb && midd'
 alias midserve='middleman server'
 alias mids='midserve'
+
+alias newblog='__newblog() {vim ~/webProjects/cwervo.com/source/thoughts/`date "+%Y/%m/%d/${1}"`};__newblog'
+alias cdtoday='~/webProjects/cwervo.com/source/thoughts/`date "+%Y/%m/%d/"`'
 
 # ------------
 # Tmux Aliases
