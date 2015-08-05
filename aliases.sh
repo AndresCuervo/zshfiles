@@ -17,6 +17,8 @@ alias battery='pmset -g ps'
 alias batt='battery'
 alias v='vim'
 alias vim-none='vim -u NONE "+set nocompatible" "+set hls" "+filetype plugin on" "+inoremap jk <Esc>" "+set number" "+set syntax" "+nnoremap fef mx=ggG=\`x" "+set cf"'
+# Open pocket from terminal! :)
+alias pocket='/Applications/Pocket.app/Contents/MadcOS/Pocket'
 
 # -----------------
 # Middleman Aliases
@@ -27,7 +29,7 @@ alias midbd='midb && midd'
 alias midserve='middleman server'
 alias mids='midserve'
 
-alias newblog='__newblog() {vim ~/webProjects/cwervo.com/source/thoughts/`date "+%Y/%m/%d/${1}"`};__newblog'
+alias newblog='__newblog() {vim ~/webProjects/cwervo.com/source/thoughts/`date "+%Y/%m/${1}"`};__newblog'
 alias cdtoday='~/webProjects/cwervo.com/source/thoughts/`date "+%Y/%m/%d/"`'
 
 # ------------
@@ -51,6 +53,7 @@ alias gem\?='gem list | ack '
 # -------------
 # Git alias(es)
 # -------------
+alias clone='__clone(){git clone $1 $2 && cd $_};__clone'
 alias gitrmignored='git ls-files --ignored --exclude-standard | xargs git rm --cached'
 alias gstd='__gstd() {git --git-dir=$HOME/"$1"/.git --work-tree=$HOME/"$1" status};__gstd '
 alias gshow='git remote show'
@@ -62,6 +65,7 @@ alias gshowo='gshow origin'
 # -----------
 # Set correct terminal for tmux w/ SSH
 alias ssh='TERM=xterm ssh'
+
 
 alias shbook='ssh bookcoop@bookcoop.org'
 alias shweb='ssh tinycarr@cwervo.com'
