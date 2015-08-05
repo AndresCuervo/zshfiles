@@ -18,7 +18,7 @@ alias batt='battery'
 alias v='vim'
 alias vim-none='vim -u NONE "+set nocompatible" "+set hls" "+filetype plugin on" "+inoremap jk <Esc>" "+set number" "+set syntax" "+nnoremap fef mx=ggG=\`x" "+set cf"'
 # Open pocket from terminal! :)
-alias pocket='/Applications/Pocket.app/Contents/MacOS/Pocket'
+alias pocket='open -a "Pocket"'
 
 # -----------------
 # Middleman Aliases
