@@ -20,6 +20,8 @@ alias vim-none='vim -u NONE "+set nocompatible" "+set hls" "+filetype plugin on"
 alias cdweb='cd ~/webProjects'
 # Open pocket from terminal! :)
 alias pocket='open -a "Pocket"'
+alias cdexercism='cd ~/exercism && cl'
+alias extest-ruby='ruby -rminitest/pride'
 
 # -----------------
 # Middleman Aliases
@@ -31,7 +33,7 @@ alias midserve='middleman server'
 alias mids='midserve'
 
 alias newblog='__newblog() {vim ~/webProjects/cwervo.com/source/thoughts/`date "+%Y/%m/${1}"`};__newblog'
-alias cdtoday='~/webProjects/cwervo.com/source/thoughts/`date "+%Y/%m/%d/"`'
+alias cdtoday='~/webProjects/cwervo.com/source/thoughts/`date "+%Y/%m/"`'
 
 # ------------
 # Tmux Aliases
@@ -71,5 +73,6 @@ alias ssh='TERM=xterm ssh'
 alias shbook='ssh bookcoop@bookcoop.org'
 alias shweb='ssh tinycarr@cwervo.com'
 alias shme='ssh acuervo@cs.oberlin.edu'
+alias shsql='ssh acuervo@sql.cs.oberlin.edu'
 alias shed='ssh lucid@ajlc.csr.oberlin.edu'
 alias shclyde='ssh acuervo@clyde.cs.oberlin.edu'
