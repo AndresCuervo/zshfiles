@@ -78,6 +78,7 @@ source $ZSH/oh-my-zsh.sh
 
 source ~/.zsh/aliases.sh
 source ~/.zsh/npm-completion.sh
+source ~/.zsh/iTerm2-colors.sh
 
 setopt interactivecomments
 

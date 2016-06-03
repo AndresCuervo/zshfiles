@@ -20,6 +20,13 @@ alias vim-none='vim -u NONE "+set nocompatible" "+set hls" "+filetype plugin on"
 alias cdweb='cd ~/webProjects'
 # Open pocket from terminal! :)
 alias pocket='open -a "Pocket"'
+alias cdexercism='cd ~/exercism && cl'
+alias extest-ruby='ruby -rminitest/pride'
+
+alias cdgames='~/UnityGames'
+
+alias editLocalDictionary='v /Users/$(whoami)/Library/Spelling/LocalDictionary'
+
 
 # -----------------
 # Middleman Aliases
@@ -31,7 +38,7 @@ alias midserve='middleman server'
 alias mids='midserve'
 
 alias newblog='__newblog() {vim ~/webProjects/cwervo.com/source/thoughts/`date "+%Y/%m/${1}"`};__newblog'
-alias cdtoday='~/webProjects/cwervo.com/source/thoughts/`date "+%Y/%m/%d/"`'
+alias cdtoday='~/webProjects/cwervo.com/source/thoughts/`date "+%Y/%m/"`'
 
 # ------------
 # Tmux Aliases
@@ -56,9 +63,12 @@ alias gem\?='gem list | ack '
 # -------------
 alias git='hub'
 alias gitrmignored='git ls-files --ignored --exclude-standard | xargs git rm --cached'
+alias gst.='gst .'
 alias gstd='__gstd() {git --git-dir=$HOME/"$1"/.git --work-tree=$HOME/"$1" status};__gstd '
 alias gshow='git remote show'
 alias gshowo='gshow origin'
+# To be used in conjunction with hub: https://hub.github.com/
+alias git='hub'
 
 
 # -----------
@@ -71,8 +81,11 @@ alias ssh='TERM=xterm ssh'
 alias shbook='ssh bookcoop@bookcoop.org'
 alias shweb='ssh tinycarr@cwervo.com'
 alias shme='ssh acuervo@cs.oberlin.edu'
-alias shed='ssh lucid@ajlc.csr.oberlin.edu'
+alias shsql='ssh acuervo@sql.cs.oberlin.edu'
+alias shed='ssh admin060606@107.180.21.19'
+alias shed2='ssh lucid@ajlc.csr.oberlin.edu'
 alias shclyde='ssh acuervo@clyde.cs.oberlin.edu'
+alias shoberlinio='ssh cuervo@oberlin.io'
 
 # -------
 # CircleCI
