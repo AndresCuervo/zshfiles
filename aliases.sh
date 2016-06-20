@@ -2,6 +2,10 @@ alias alias\?='alias | grep '
 alias ps\?='ps | ack'
 alias trash='rmtrash'
 alias ls='ls -AG'
+function case_insensitive_recursive_file_search() {
+    find . -not -path '*/\.*' -iname "*$1*"
+}
+alias lg="case_insensitive_recursive_file_search"
 alias cl='clear && ls'
 alias rbenv="nocorrect rbenv"
 alias dtruss='sudo dtruss'
