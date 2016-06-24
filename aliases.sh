@@ -73,6 +73,8 @@ alias gshow='git remote show'
 alias gshowo='gshow origin'
 # To be used in conjunction with hub: https://hub.github.com/
 alias git='hub'
+# Go to 'git root'
+alias gr="cd $( git rev-parse --show-toplevel )"
 
 
 # -----------
