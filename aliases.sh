@@ -74,7 +74,11 @@ alias gshowo='gshow origin'
 # To be used in conjunction with hub: https://hub.github.com/
 alias git='hub'
 # Go to 'git root'
-alias gr="cd $( git rev-parse --show-toplevel )"
+unalias gr
+function gr() {
+    git_root=`git rev-parse --show-toplevel`
+    cd $git_root
+}
 
 
 # -----------
