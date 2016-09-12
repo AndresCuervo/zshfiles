@@ -25,7 +25,7 @@ alias cdweb='cd ~/webProjects'
 alias cdcode='cd ~/code'
 alias cdco='cd ~/code'
 
-cd210 = 'cd ~/code/school/210/'
+alias cd210='cd ~/code/school/210/'
 
 # Open pocket from terminal! :)
 alias pocket='open -a "Pocket"'
