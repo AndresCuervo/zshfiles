@@ -22,6 +22,11 @@ alias batt='battery'
 alias v='vim'
 alias vim-none='vim -u NONE "+set nocompatible" "+set hls" "+filetype plugin on" "+inoremap jk <Esc>" "+set number" "+set syntax" "+nnoremap fef mx=ggG=\`x" "+set cf"'
 alias cdweb='cd ~/webProjects'
+alias cdcode='cd ~/code'
+alias cdco='cd ~/code'
+
+cd210 = 'cd ~/code/school/210/'
+
 # Open pocket from terminal! :)
 alias pocket='open -a "Pocket"'
 alias cdexercism='cd ~/exercism && cl'
