@@ -26,6 +26,7 @@ alias cdcode='cd ~/code'
 alias cdco='cd ~/code'
 
 alias cd210='cd ~/code/school/210/'
+alias mars='java -jar /Applications/MARS.jar'
 
 # Open pocket from terminal! :)
 alias pocket='open -a "Pocket"'
@@ -55,9 +56,14 @@ alias cdtoday='~/webProjects/cwervo.com/source/thoughts/`date "+%Y/%m/"`'
 alias tksess='tmux kill-session -t'
 alias tkpane='tmux kill-pane -t'
 
+# ------------
+# Python Aliases
+# ------------
 # Start up a simple HTTP server with python, put a number after this to specifiy the port, i.e.
 # pyserve 8080
 alias pyserve='python -m SimpleHTTPServer'
+alias py3='python3'
+
 
 # --------------
 # Ruby alias(es)
