@@ -94,4 +94,5 @@ chmod 600 "${SSH_ENV}"
 
 export PATH=$PATH:/.rvm/bin # Add RVM to PATH for scripting
 export PATH="/usr/local/mysql/bin:$PATH"
+source $HOME/.cargo/env # Add cargo (Rust) to path
 export EDITOR='vim'

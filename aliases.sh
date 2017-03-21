@@ -21,6 +21,8 @@ alias battery='pmset -g ps'
 alias batt='battery'
 alias v='vim'
 alias vim-none='vim -u NONE "+set nocompatible" "+set hls" "+filetype plugin on" "+inoremap jk <Esc>" "+set number" "+set syntax" "+nnoremap fef mx=ggG=\`x" "+set cf"'
+alias cdcircle='cd ~/code/work/circleCI'
+alias cdci='cdcircle'
 alias cdweb='cd ~/webProjects'
 alias cdcode='cd ~/code'
 alias cdco='cd ~/code'
@@ -33,9 +35,12 @@ alias pocket='open -a "Pocket"'
 alias cdexercism='cd ~/exercism && cl'
 alias extest-ruby='ruby -rminitest/pride'
 
+alias vrexif='exiftool -Artist="Andres Cuervo" -ProjectionType="equirectangular"'
 alias cdgames='~/UnityGames'
 
 alias editLocalDictionary='v /Users/$(whoami)/Library/Spelling/LocalDictionary'
+# Open a command lin javascript interpreter using just the alias jsc :)
+alias jsc='/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Resources/jsc'
 
 
 # -----------------
@@ -90,7 +95,11 @@ function gr() {
     git_root=`git rev-parse --show-toplevel`
     cd $git_root
 }
-
+# Amend commiting to use GPG signing
+unalias gcmsg
+alias gcmsg='git commit -S -m'
+unalias gc
+alias gc='git commit -S -v'
 
 # -----------
 # SSH Aliases
