@@ -94,5 +94,11 @@ chmod 600 "${SSH_ENV}"
 
 export PATH=$PATH:/.rvm/bin # Add RVM to PATH for scripting
 export PATH="/usr/local/mysql/bin:$PATH"
+export PATH="$HOME/Library/Haskell/bin:$PATH" # add Haskell to path
 source $HOME/.cargo/env # Add cargo (Rust) to path
 export EDITOR='vim'
+
+# https://homebrew-file.readthedocs.io/en/latest/installation.html
+if [ -f $(brew --prefix)/etc/brew-wrap ];then
+  source $(brew --prefix)/etc/brew-wrap
+fi

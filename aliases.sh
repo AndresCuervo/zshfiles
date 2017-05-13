@@ -116,6 +116,12 @@ alias shed='ssh admin060606@107.180.21.19'
 alias shed2='ssh lucid@ajlc.csr.oberlin.edu'
 alias shclyde='ssh acuervo@clyde.cs.oberlin.edu'
 alias shoberlinio='ssh cuervo@oberlin.io'
+alias shvpn='ssh root@104.131.181.37'
+
+# -------
+# Art stuff
+# -------
+alias electron='/Applications/Electron.app/Contents/MacOS/Electron '
 
 # -------
 # CircleCI
