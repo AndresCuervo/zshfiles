@@ -96,6 +96,8 @@ export PATH=$PATH:/.rvm/bin # Add RVM to PATH for scripting
 export PATH="/usr/local/mysql/bin:$PATH"
 export PATH="$HOME/Library/Haskell/bin:$PATH" # add Haskell to path
 source $HOME/.cargo/env # Add cargo (Rust) to path
+export GOPATH=$HOME/go # Add go path
+export PATH=$PATH:$GOPATH/bin
 export EDITOR='vim'
 
 # https://homebrew-file.readthedocs.io/en/latest/installation.html

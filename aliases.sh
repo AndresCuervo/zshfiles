@@ -124,10 +124,11 @@ alias shvpn='ssh root@104.131.181.37'
 alias electron='/Applications/Electron.app/Contents/MacOS/Electron '
 
 # -------
-# CircleCI
+# Other locations
 # -------
 
-alias cci="cd ~/circle_repos/"
+alias cci="cd ~/code/work/circleCI/"
+alias cdeveryday="cd ~/code/art/twentyfourseven/"
 
 # ------
 # Fuck Alias
