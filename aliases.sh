@@ -101,6 +101,9 @@ alias gcmsg='git commit -S -m'
 unalias gc
 alias gc='git commit -S -v'
 
+# Git diff, no whitespace
+alias gdw='gd -w'
+
 # -----------
 # SSH Aliases
 # -----------
