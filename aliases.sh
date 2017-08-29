@@ -30,8 +30,10 @@ alias cdco='cd ~/code'
 alias cd210='cd ~/code/school/210/'
 alias mars='java -jar /Applications/MARS.jar'
 
-# Open pocket from terminal! :)
+# Open Applications from terminal! :)
 alias pocket='open -a "Pocket"'
+alias photoshop='open -a Adobe\ Photoshop\ CS6 '
+
 alias cdexercism='cd ~/exercism && cl'
 alias extest-ruby='ruby -rminitest/pride'
 
@@ -125,6 +127,9 @@ alias shvpn='ssh root@104.131.181.37'
 # Art stuff
 # -------
 alias electron='/Applications/Electron.app/Contents/MacOS/Electron '
+function c2gltf() {
+    collada2gltf -f "$1".dae -o "$1".gltf -k
+}
 
 # -------
 # Other locations
@@ -132,6 +137,7 @@ alias electron='/Applications/Electron.app/Contents/MacOS/Electron '
 
 alias cci="cd ~/code/work/circleCI/"
 alias cdeveryday="cd ~/code/art/twentyfourseven/"
+alias cdassets='cd ~/code/art/assets-gh'
 
 # ------
 # Fuck Alias
