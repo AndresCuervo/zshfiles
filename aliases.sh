@@ -79,6 +79,10 @@ alias ri='ri -Tf ansi'
 # Really convenient alias to search through local gems!
 alias gem\?='gem list | ack '
 
+# --------------
+# Lua alias(es)
+# --------------
+alias luai="lua -i -e \"_PROMPT='✨ 💖 🤖 🖥 ↦ '\""
 
 # -------------
 # Git alias(es)
