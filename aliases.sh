@@ -147,3 +147,8 @@ alias cdassets='cd ~/code/art/assets-gh'
 # Fuck Alias
 # ------
 eval "$(thefuck --alias)"
+
+# ------
+# Docker Alias
+# ------
+alias kill-docker-containers='docker kill $(docker ps -q)'
