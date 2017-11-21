@@ -104,3 +104,10 @@ export EDITOR='vim'
 if [ -f $(brew --prefix)/etc/brew-wrap ];then
   source $(brew --prefix)/etc/brew-wrap
 fi
+
+# Set Java Version manually to 1.8 ugh
+# Can us/usr/libexec/java_home -V to show you the Java JDK versions available on your computer
+# export JAVA_HOME=`/usr/libexec/java_home -v 1.8` (For example) changes your
+# Java version to 1.8 (JDK 8) so I put that at the bottom of my .zshrc for now,
+# until the Clojure ecosystem can handle Java 9
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
