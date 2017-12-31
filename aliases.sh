@@ -19,8 +19,15 @@ alias cdvg='cd ~/webProjects/p5/videoGame && cl'
 alias colorsinfo='sed -n "23,36p" ~/.zsh/lscolors'
 alias battery='pmset -g ps'
 alias batt='battery'
-alias v='vim'
+
+if [ -n "${EDITOR}" ]; then
+    alias v='$EDITOR'
+else
+    alias v='vim'
+fi
+
 alias vim-none='vim -u NONE "+set nocompatible" "+set hls" "+filetype plugin on" "+inoremap jk <Esc>" "+set number" "+set syntax" "+nnoremap fef mx=ggG=\`x" "+set cf"'
+alias cdof='cd ~/code/art/ofx9.8/'
 alias cdcircle='cd ~/code/work/circleCI'
 alias cdci='cdcircle'
 alias cdweb='cd ~/webProjects'

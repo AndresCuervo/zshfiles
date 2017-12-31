@@ -76,12 +76,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-source ~/.zsh/aliases.sh
-source ~/.zsh/npm-completion.sh
-source ~/.zsh/iTerm2-colors.sh
-
-setopt interactivecomments
-
 function start_agent {
 echo "Initialising new SSH agent..."
 /usr/bin/ssh-agent | sed 's/^echo/#echo/' > "${SSH_ENV}"
@@ -98,7 +92,7 @@ export PATH="$HOME/Library/Haskell/bin:$PATH" # add Haskell to path
 source $HOME/.cargo/env # Add cargo (Rust) to path
 export GOPATH=$HOME/go # Add go path
 export PATH=$PATH:$GOPATH/bin
-export EDITOR='vim'
+export EDITOR='nvim'
 
 # https://homebrew-file.readthedocs.io/en/latest/installation.html
 if [ -f $(brew --prefix)/etc/brew-wrap ];then
@@ -111,3 +105,8 @@ fi
 # Java version to 1.8 (JDK 8) so I put that at the bottom of my .zshrc for now,
 # until the Clojure ecosystem can handle Java 9
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+
+source ~/.zsh/aliases.sh
+source ~/.zsh/npm-completion.sh
+source ~/.zsh/iTerm2-colors.sh
+setopt interactivecomments
